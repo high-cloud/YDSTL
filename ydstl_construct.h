@@ -29,7 +29,7 @@ inline void destroy(Iterator first,Iterator last)
 template<typename Iterator, typename T>
 inline void __destroy(Iterator first,Iterator last,T* p)
 {
-    __destroy_aux(first,last, std:is_trivally_destructible<T>());
+    __destroy_aux(first,last, std:is_trivally_destructible<T>::value);
 }
 
 template<typename Iterator>
@@ -40,6 +40,12 @@ inline void __destroy_aux(Iterator first,Iterator last,std::false_type)
         destroy(&*first);
     }
 }
+
+template<typename Iterator>
+inline void __destroy_aux(Iterator first,Iterator last,std::true_type)
+{
+}
+
 
 }// end namespace ydstl
 

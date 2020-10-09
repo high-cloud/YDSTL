@@ -156,7 +156,7 @@ namespace ydstl
         return p;
     }
 
-    void *alloc::refill(size_t size)
+    void* alloc::refill(size_t size)
     {
         int n = 20; // 默认申请 20 块
         char *result = chunk_alloc(size, n);

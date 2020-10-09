@@ -60,7 +60,7 @@ template<typename Iterator>
 inline typename iterator_traits<Iterator>::value_type*
 value_type(const Iterator&)
 {
-    return static_cast<iterator<Iterator>::value_type*>(0);
+    return static_cast<iterator_traits<Iterator>::value_type *>(0);
 }
 
 
