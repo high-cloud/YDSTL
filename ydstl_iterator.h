@@ -3,6 +3,8 @@
 
 #include<stddef.h>
 
+namespace ydstl{
+
 struct input_iterator_tag{};
 struct output_iterator_tag{};
 struct forward_iterator_tag{};
@@ -53,11 +55,17 @@ struct iterator_traits<const T*>
     typedef typename const T&                 reference;
 };
 
+// value type function
+template<typename Iterator>
+inline typename iterator_traits<Iterator>::value_type*
+value_type(const Iterator&)
+{
+    return static_cast<iterator<Iterator>::value_type*>(0);
+}
 
 
 
-
-
+}// end namespace ydstl
 
 
 
