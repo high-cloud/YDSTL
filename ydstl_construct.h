@@ -29,7 +29,7 @@ inline void destroy(Iterator first,Iterator last)
 template<typename Iterator, typename T>
 inline void __destroy(Iterator first,Iterator last,T* p)
 {
-    __destroy_aux(first,last, std:is_trivally_destructible<T>::value);
+    __destroy_aux(first,last, std::is_trivally_destructible<T>::value);
 }
 
 template<typename Iterator>

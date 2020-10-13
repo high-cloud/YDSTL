@@ -7,9 +7,9 @@ namespace ydstl{
 
 struct input_iterator_tag{};
 struct output_iterator_tag{};
-struct forward_iterator_tag{};
-struct bidirectional_iterator_tag{};
-struct randon_access_iterator_tag{};
+struct forward_iterator_tag:public input_iterator_tag{};
+struct bidirectional_iterator_tag:forward_iterator_tag{};
+struct random_access_iterator_tag:bidirectional_iterator_tag{};
 
 template<typename Category,typename T,typename Distance=ptrdiff_t,typename Pointer=T*,typename Reference=T&>
 struct iterator
@@ -60,7 +60,25 @@ template<typename Iterator>
 inline typename iterator_traits<Iterator>::value_type*
 value_type(const Iterator&)
 {
-    return static_cast<iterator_traits<Iterator>::value_type *>(0);
+    typedef typename iterator_traits<Iterator>::value_type value_type;
+    return static_cast<value_type *>(0);
+}
+
+// return iterator category
+template<typename Iterator>
+inline typename iterator_traits<Iterator>::iterator_category
+iterator_category(const Iterator&){
+    typedef typename iterator_traits<Iterator>::iterator_category category;
+    return static_cast<category *>(0);
+}
+
+
+// return distance category
+template<typename Iterator>
+inline typename iterator_traits<Iterator>::difference_type
+iterator_category(const Iterator&){
+    typedef typename iterator_traits<Iterator>::difference_type distance;
+    return static_cast<distance *>(0);
 }
 
 
