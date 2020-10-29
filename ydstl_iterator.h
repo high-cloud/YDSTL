@@ -73,10 +73,10 @@ iterator_category(const Iterator&){
 }
 
 
-// return distance category
+// return distance type
 template<typename Iterator>
 inline typename iterator_traits<Iterator>::difference_type
-iterator_category(const Iterator&){
+difference_type(const Iterator&){
     typedef typename iterator_traits<Iterator>::difference_type distance;
     return static_cast<distance *>(0);
 }
