@@ -1,5 +1,5 @@
-#ifndef YDSTL_ITERATOR.H
-#define YDSTL_ITERATOR.H
+#ifndef __YDSTL_ITERATOR_H__
+#define __YDSTL_ITERATOR_H__
 
 #include<stddef.h>
 

@@ -1,5 +1,5 @@
-#ifndef YDSTL_ALGOBASE_H
-#define YDSTL_ALGOBASE_H
+#ifndef __YDSTL_ALGOBASE_H__
+#define __YDSTL_ALGOBASE_H__
 
 #include<type_traits>
 #include<string.h>

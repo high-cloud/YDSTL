@@ -1,5 +1,5 @@
-#ifndef YDSTL_UNINITIALIZED_H
-#define YDSTL_UNINITIALIZED_H
+#ifndef __YDSTL_UNINITIALIZED_H__
+#define __YDSTL_UNINITIALIZED_H__
 
 #include"ydstl_iterator.h"
 #include"ydstl_algobase.h"

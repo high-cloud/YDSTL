@@ -1,5 +1,5 @@
-#ifndef YDSTL_ALGORITHM_H
-#define YDSTL_ALGORITHM_H
+#ifndef __YDSTL_ALGORITHM_H__
+#define __YDSTL_ALGORITHM_H__
 
 #include "ydstl_iterator.h"
 

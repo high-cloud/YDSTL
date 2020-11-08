@@ -1,5 +1,5 @@
-#ifndef YDSTL_FUNCTIONAL_H
-#define YDSTL_FUNCTIONAL_H
+#ifndef __YDSTL_FUNCTIONAL_H__
+#define __YDSTL_FUNCTIONAL_H__
 
 // 该文件定义 仿函数
 

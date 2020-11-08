@@ -1,5 +1,5 @@
-#ifndef YDSTL_LIST_H
-#define YDSTL_LIST_H
+#ifndef __YDSTL_LIST_H__
+#define __YDSTL_LIST_H__
 
 // list
 #include "ydstl_alloc.h"

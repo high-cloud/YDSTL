@@ -1,5 +1,5 @@
-#ifndef YDSTL_ALLOC_H
-#define YDSTL_ALLOC_H
+#ifndef __YDSTL_ALLOC_H__
+#define __YDSTL_ALLOC_H__
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -31,6 +31,7 @@ namespace ydstl
             Alloc::deallocate(p, n * sizeof(T));
         }
     };
+    
     // ----------------------------------------------------------------------------------------------
     // 第一级配置器,使用malloc
 

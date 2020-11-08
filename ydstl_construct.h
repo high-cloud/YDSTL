@@ -1,5 +1,5 @@
-#ifndef YDSTL_CONSTRUCT_H
-#define YDSTL_CONSTRUCT_H
+#ifndef __YDSTL_CONSTRUCT_H__
+#define __YDSTL_CONSTRUCT_H__
 
 #include<new>
 #include<type_traits>

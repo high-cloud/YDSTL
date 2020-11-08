@@ -1,5 +1,5 @@
-#ifndef YDSTL_STACK_H
-#define YDSTL_STACK_H
+#ifndef __YDSTL_STACK_H__
+#define __YDSTL_STACK_H__
 
 #include "ydstl_list.h"
 

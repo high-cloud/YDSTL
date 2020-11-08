@@ -1,5 +1,5 @@
-#ifndef YDSTL_VECTOR_H
-#define YDSTL_VECTOR_H
+#ifndef __YDSTL_VECTOR_H__
+#define __YDSTL_VECTOR_H__
 
 #include "ydstl_alloc.h"
 #include "ydstl_construct.h"

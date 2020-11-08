@@ -1,5 +1,5 @@
-#ifndef YDSTL_QUENE_H
-#define YDSTL_QUENE_H
+#ifndef __YDSTL_QUENE_H__
+#define __YDSTL_QUENE_H__
 
 #include "ydstl_list.h"
 #include "ydstl_vector.h"
