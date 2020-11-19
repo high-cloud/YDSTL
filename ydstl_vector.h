@@ -59,6 +59,7 @@ namespace ydstl
         size_type capacity() const { return (size_type)(end_of_storage - start); }
         bool empty() const { return start == end; }
         reference operator[](size_type n) { return *(begin() + n); }
+        void swap(vector y);//todo
 
         // constructor
         vector() : start(0), end(0), end_of_storage(0) {}
